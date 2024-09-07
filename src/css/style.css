@@ -101,16 +101,83 @@ body::before {
     z-index: -1;
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile p {
-    margin-right: 20px; /* Espacio entre el texto y la imagen */
-}
-
-.profile img {
+img {
     border-radius: 50%;
+}
+
+/* Añade tus estilos existentes aquí */
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #FFFF00;
+    margin: 50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #00FFFF;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #00FFFF;
+}
+
+.project-item.active {
+    background-color: #333;
+}
+
+.project-info {
+    flex: 2;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #FFFF;
+    display: none;
+}
+
+.project-info img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-info h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.project-info.active {
+    display: block;
+}
+
+/* Añade más estilos aquí si es necesario */
+
+
+p {
+    color: #f9f9f9;
+}
+
+h2 {
+    color: #121212;
+}
+
+.description {
+    color: #121212; /* Color personalizado para el párrafo específico */
 }

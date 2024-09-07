@@ -5,46 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Jocsan Mejía</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Jocsan Mejía</h1>
-        </div>
+        <h1>Mis Proyectos</h1>
     </header>
+    <div class="container">
+        <div class="project-list">
+            <div class="project-item" onclick="showProject('sentinel-prime')">Sentinel Prime</div>
+            <div class="project-item" onclick="showProject('proyecto-drone')">ProyectoDronePrácticamía</div>
+            <div class="project-item" onclick="showProject('ssis')">SSIS</div>
+        </div>
+        <div id="sentinel-prime" class="project-info">
+            <h2><a href="https://enlace-a-sentinel-prime.com" target="_blank">Sentinel Prime</a></h2>
+            <p class="description">Sistema de comercio electrónico para TecnoNic.</p>
+            <img src="img/Perfecto.png" alt="Sentinel Prime">
+        </div>
+        <div id="proyecto-drone" class="project-info">
+            <h2><a href="https://enlace-a-proyectodronepracticamia.com" target="_blank">ProyectoDronePrácticamía</a></h2>
+            <p class="description">Diseño y construcción de un dron.</p>
+            <img src="img/proyectodronepracticamia.jpg" alt="ProyectoDronePrácticamía">
+        </div>
+        <div id="ssis" class="project-info">
+            <h2><a href="https://github.com/jocsanmj/SSIS" target="_blank">SSIS</a></h2>
+            <p class="description">Este proyecto de SQL Server Integration Services (SSIS) 
+                se ha creado para mejorar y automatizar la integración de datos. 
+                Con SSIS, se pueden extraer, transformar y cargar (ETL) datos 
+                de diferentes fuentes hacia un almacén centralizado.</p>
+            <img src="img/portafolio-personal.jpg" alt="Portafolio Personal">
+        </div>
+    </div>
 
-    <!-- Menú lateral -->
-    <nav class="sidebar">
+    <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre_mi.html">Sobre mí</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html"><i class="fas fa-home icon-home"></i></a></li>
+            <li><a href="sobre_mi.html"><i class="fas fa-user icon-user"></i></a></li>
+            <li><a href="proyectos.html"><i class="fas fa-briefcase icon-briefcase"></i></a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope icon-mail"></i></a></li>
         </ul>
     </nav>
-    
-    <section class="main-content">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <h3><a href="https://github.com/david-mrios/Inventory-JAVA-NEATBEANS" target="_blank">Inventory</a></h3>
-                <p>Sistema de Inventario de Equipos Tecnológicos en Laboratorios de Computación.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/david-mrios/CMITecnoNicMobile" target="_blank">CMI_TecnoNic</a></h3>
-                <p>Cuadro de mando para mejorar la gestión del desempeño en TecnoNic.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/jocsanmj/SSIS" target="_blank">Proyecto SSIS</a></h3>
-                <p>Proyecto de SQL Server Integration Services (SSIS) para la automatización de integración de datos.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Jocsan Mejía. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
