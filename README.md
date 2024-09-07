@@ -5,9 +5,15 @@ Proyecto básico para plantilla de portafolio personal
 ## Estructura del Proyecto
 
 ```
-Galeria/
-├── css/style.css
+Portafolio/
+├── src
+├── src/css/style.css
+├── src/img/img.jpg
+├── src/js/scripts.js
+├── contacto.html
 ├── index.html
+├── proyectos.html
+├── sobre_mi.html
 README.md
 ```
 ## Uso
