@@ -6,8 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 .container {
@@ -17,73 +19,124 @@ body {
 
 /* Encabezado */
 header {
-    background: #333;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2.5rem;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background: #00b4d8;
+    border-radius: 5px;
+    color: #fff;
 }
 
 /* Sección "Sobre mí" */
 #about {
-    padding: 40px 0;
-    background: #f4f4f4;
+    padding: 50px 0;
+    background: #ffffff;
     text-align: center;
 }
 
 #about h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
 }
 
 /* Sección "Proyectos" */
 #projects {
-    padding: 40px 0;
+    padding: 50px 0;
+    background-color: #f9f9f9;
 }
 
 #projects h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #0077b6;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .project {
-    background: #f4f4f4;
-    padding: 15px;
+    background: #ffffff;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
 }
 
 /* Sección "Contacto" */
 #contact {
-    padding: 40px 0;
+    padding: 50px 0;
+    background: #ffffff;
     text-align: center;
 }
 
+#contact h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
 #contact a {
-    color: #333;
+    color: #0077b6;
+    font-size: 1.2rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #contact a:hover {
@@ -92,12 +145,19 @@ nav ul li a:hover {
 
 /* Pie de página */
 footer {
-    background: #333;
+    background: #0077b6;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
+}
+
+/* Agrega transiciones suaves */
+a, button {
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
