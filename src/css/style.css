@@ -100,3 +100,17 @@ body::before {
     opacity: 0.15;
     z-index: -1;
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile p {
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.profile img {
+    border-radius: 50%;
+}
