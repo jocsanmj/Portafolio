@@ -181,3 +181,38 @@ h2 {
 .description {
     color: #121212; /* Color personalizado para el párrafo específico */
 }
+
+/* Estilos para los iconos de redes sociales */
+.social-icon {
+    font-size: 2rem; /* Ajusta el tamaño de los iconos aquí */
+    margin: 0 10px; /* Espacio entre los iconos */
+    display: inline-block;
+    text-align: center;
+    width: 50px; /* Ancho del fondo */
+    height: 50px; /* Altura del fondo */
+    line-height: 50px; /* Alineación vertical del icono */
+    border-radius: 50%; /* Hace el fondo redondo */
+    background-color: #333; /* Color de fondo, cámbialo según tus preferencias */
+    color: inherit; /* Mantiene el color original del icono */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición para el hover */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.social-icon:hover {
+    background-color: #555; /* Color de fondo cuando se pasa el ratón */
+    color: #fff; /* Color del icono cuando se pasa el ratón */
+}
+
+/* Colores específicos para cada red social */
+.social-icon.facebook {
+    color: #3b5998; /* Color del icono para Facebook */
+}
+
+.social-icon.github {
+    color: #fff; /* Color del icono para GitHub, en contraste con el fondo */
+    background-color: #333; /* Color de fondo para GitHub, debe contrastar con el icono blanco */
+}
+
+.social-icon.instagram {
+    color: #e4405f; /* Color del icono para Instagram */
+}
