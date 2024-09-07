@@ -1,6 +1,6 @@
-<h2 align="center"> Galería de Películas </h2>
+<h2 align="center"> Portafolio Personal </h2>
 
-Proyecto básico de uso de flex-grid y manejo de columnas y estilo de listas.
+Proyecto básico para plantilla de portafolio personal
 
 ## Estructura del Proyecto
 
